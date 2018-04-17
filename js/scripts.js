@@ -6,4 +6,4 @@ var yourBirthday = prompt("Hey " +firstName + " when was your birthday? (MM/DD/Y
 console.log(yourBirthday);
 var birthdayAlert = new Date(yourBirthday);
 
-alert(birthdayAlert);
+confirm("Is this your birthday? " +birthdayAlert);
