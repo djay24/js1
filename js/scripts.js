@@ -48,22 +48,68 @@
 // console.log(cars);
 
 
-let arr = ["Christa" , "Ryeker" , "Bryan" , "Jeff", "Sam"];
+// let arr = ["Christa" , "Ryeker" , "Bryan" , "Jeff", "Sam"];
+//
+// //Array.isArray(arr);
+// // isArray is to check if it is an array
+// //arr.shift();
+// console.log(arr);
+//
+// let bestEver = arr.slice(); // leaving the () blank just gives you an exact copy of the original
+// console.log(arr);
+//
+// let noCoteacher = arr.slice(1); // returns copy of the array starting at index 1
+//
+// //console.log(bestEver);
+// //console.log(noCoteacher);
+//
+// let teacherIndex = arr.indexOf("Ryeker");  // indexOf only give you the index of the first instance
+// console.log(teacherIndex);
+// let onlyStudents = arr.splice(teacherIndex, 1 , 0);
+// console.log(onlyStudents);
 
-//Array.isArray(arr);
-// isArray is to check if it is an array
-//arr.shift();
-console.log(arr);
 
-let bestEver = arr.slice(); // leaving the () blank just gives you an exact copy of the original
-console.log(arr);
+// let shoppingList = [];
+//
+// let item1 = "Detergent";
+// let item2 = "Cheese";
+// let item3 = "Crackers";
+// let item4 = "Water"
+//
+// shoppingList.push(item1, item2, item3, item4); //this is one way to push into an array
+//
+// console.log(shoppingList);
+//
+// // favorite movies Array
+// let favoriteMovie = ['Star Wars VI', '1983'];
+// let secondFavorite = ['Return of the King', '2003'];
+// let thirdFavorite = ['Equilibrium', '2002'];
+// let myFavoriteMovies = [];
+// myFavoriteMovies.push(favoriteMovie, secondFavorite, thirdFavorite);
+//
+// console.log(myFavoriteMovies[0][1], myFavoriteMovies[1][1]);
 
-let noCoteacher = arr.slice(1); // returns copy of the array starting at index 1
+let favoriteMovie = ["Kingsman: The Secret Service", "Taron Egerton", "2014"];
+let secondFavorite = ["Kingsman: The Golden Service", "Taron Egerton", "2017"];
+let thirdFavorite = ["Guardians of the Galaxy", "Chris Pratt", "2014"];
 
-//console.log(bestEver);
-//console.log(noCoteacher);
+let myFavoriteMovies = []
+myFavoriteMovies.push(favoriteMovie, secondFavorite, thirdFavorite);
 
-let teacherIndex = arr.indexOf("Ryeker");  // indexOf only give you the index of the first instance
-console.log(teacherIndex);
-let onlyStudents = arr.splice(teacherIndex, 1 , 0);
-console.log(onlyStudents);
+for(let i = 0; i < myFavoriteMovies.length ; i++) {
+  if(myFavoriteMovies[i][0] === favoriteMovie[0]){
+  console.log(i, myFavoriteMovies[i]);
+  let correctEntry = myFavoriteMovies[i];
+  alert(`${correctEntry[0]} , ${correctEntry[2]}`);
+  }
+}
+//console.log(myFavoriteMovies);
+
+// console.log(myFavoriteMovies[0][1], myFavoriteMovies[2][1]);
+
+// const titles = [];
+// const favAndLeastFav = [];
+//
+// titles.push(favoriteMovie[0], secondFavorite[0], thirdFavorite[0]);
+//
+// console.log(titles);
