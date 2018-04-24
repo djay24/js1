@@ -34,3 +34,22 @@
 
 
 // color prompt
+
+let yourName = prompt("What is your name?");
+
+let favColor = prompt("What is your favorite color out of these options" , "Choose from: red, blue, green, yellow, orange, pink, white, grey, black, brown");
+
+let messageToUser;
+
+switch(favColor.toLowerCase()){
+  case "blue":
+  messageToUser = "Blue is my favorite as well!";
+  break;
+  case "red":
+  messageToUser = "Red shoes look cool. Don't you think?";
+  break;
+  default:
+  messageToUser = "Please use one of the colors I gave you";
+  break;
+}
+alert(`Hey ${yourName}, ${messageToUser}`)
