@@ -9,5 +9,9 @@ myTodo.push(item1, item2, item3);
 console.log(myTodo);
 
 for(i = 0; i < myTodo.length; i++) {
-  console.log(i, myTodo[0])
+  console.log(i, myTodo[i]);
+  let itemDay = prompt(`What day to you need to ${myTodo[i]}`);
+  console.log(itemDay);
+  
 }
+console.log(myTodo)
