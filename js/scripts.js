@@ -34,23 +34,23 @@
 //   return age * 7;
 // }
 
-// let yourAge = parseInt(prompt("How old are you?", "20"));
-//
-// let usageRate = parseInt(prompt("How many times a day do you use our product?", "2"));
-//
-// if (!isNaN(yourAge && usageRate)) {
-// lifetimeSupplyCalc(yourAge, usageRate)
-// console.log()
-// } else {
-//
-// }
-//
-// function lifetimeSupplyCalc(yourAge, usageRate) {
-//   let yearsLeft = 80 - yourAge; // How many years you have left
-//   let yearUse = usageRate * 365; // How many times a year you use
-//   let yourAmount = yearsLeft * yearUse;
-//   console.log(yourAmount)
-// }
+let yourAge = parseInt(prompt("How old are you?", "20"));
+
+let usageRate = parseInt(prompt("How many times a day do you use our product?", "2"));
+
+if (!isNaN(yourAge && usageRate)) {
+lifetimeSupplyCalc(yourAge, usageRate)
+console.log()
+} else {
+
+}
+
+function lifetimeSupplyCalc(yourAge, usageRate) {
+  let yearsLeft = 80 - yourAge; // How many years you have left
+  let yearUse = usageRate * 365; // How many times a year you use
+  let yourAmount = yearsLeft * yearUse;
+  console.log(yourAmount)
+}
 
 
 // ryeker solution
