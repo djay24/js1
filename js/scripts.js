@@ -19,7 +19,7 @@ function farToCel(far) {
   document.getElementById("tempcheck").innerHTML = `The temperature is ${fahrenheitConverted.toFixed(0)} °Celcius`;
   }
 function celToFar(cel) {
-  let celciusConverted = (cel + 32) * 1.8;
+  let celciusConverted = (cel * 1.8) + 32 ;
   document.getElementById("tempcheck").innerHTML = `The temperature is ${celciusConverted.toFixed(0)} °Fahrenheit`;
 }
 }
